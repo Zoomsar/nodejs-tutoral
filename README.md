@@ -64,3 +64,15 @@ async function readFile() {
 }
 
 readFile();
+
+# Scripts
+Define custom scripts that can be run with npm run <script-name>:
+
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+  "test": "jest",
+  "build": "webpack --mode production",
+  "lint": "eslint .",
+  "prepare": "husky install"
+}
